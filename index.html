@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fort Wayne Submission Fighting</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: black;
+      cursor: pointer;
+      overflow: hidden;
+    }
+
+    /* Background image */
+    .bg {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url("fwsf-background.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      z-index: -2;
+    }
+
+    /* SHOP BUTTON */
+    .shop-btn {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+
+      background: black;
+      color: white;
+
+      padding: 12px 24px;
+      border-radius: 10px;
+
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: bold;
+
+      transition: 0.3s ease;
+      z-index: 9999;
+    }
+
+    .shop-btn:hover {
+      background: white;
+      color: black;
+      transform: scale(1.05);
+    }
+
+    
+
+    /* Content */
+    .content {
+      text-align: center;
+      padding-top: 80px;
+    }
+
+    a {
+      color: black;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Click screen */
+    #clickOverlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      z-index: 10;
+    }
+
+    iframe {
+      display: none;
+    }
+  </style>
+</head>
+
+<body onclick="startMusic()">
+
+  <!-- Background -->
+  <div class="bg"></div>
+
+  <!-- Overlay -->
+  <div class="overlay"></div>
+
+  <!-- Content -->
+  <div class="content">
+    <h1>Fort Wayne Submission Fighting</h1>
+    <p>Page is under construction.</p>
+
+    <p>
+      🔗 Instagram:
+      <a href="https://www.instagram.com/fwsubmissionfighting/" target="_blank">
+        FWSF Offical Instagram
+      </a>
+    </p>
+     <p>
+      🔗 Youtube:
+      <a href="https://www.youtube.com/@Fwsubmissionfighting" target="_blank">
+        FWSF Offical Youtube
+      </a>
+    </p>
+    <h1>Click below for directions</h1>
+  <!-- Replace the src below with your copied link -->
+ <a href="https://maps.app.goo.gl/hKZhNMtWcEa2q6sh7">
+  <img src="fwsfmap.png" alt="Google maps">
+</a>
+  </div>
+
+
+
+</body>
+</html>
