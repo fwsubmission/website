@@ -15,7 +15,8 @@
     body {
       font-family: Arial, sans-serif;
       color: white;
-      overflow: hidden;
+      overflow-x: hidden;
+      overflow-y: auto;
     }
 
     /* Background */
@@ -39,7 +40,7 @@
 
     /* Main content */
     .content {
-      height: 100vh;
+      min-height: 100vh;
 
       display: flex;
       flex-direction: column;
@@ -118,19 +119,26 @@
 
     /* Mobile responsiveness */
     @media (max-width: 768px) {
-      h1 {
-        font-size: 40px;
-      }
+  .content {
+    justify-content: flex-start;
+    padding-top: 30px;
+    padding-bottom: 40px;
+  }
 
-      .subtitle {
-        font-size: 16px;
-      }
+  .schedule-layout {
+    flex-direction: column;
+    gap: 20px;
+  }
 
-      .btn {
-        width: 200px;
-        text-align: center;
-      }
-    }
+  .side-button {
+    width: 100%;
+  }
+
+  .btn {
+    width: 200px;
+    text-align: center;
+  }
+}
   </style>
 </head>
 
@@ -205,30 +213,16 @@
         <div class="class">10:30 AM — Open Mat</div>
       </div>
       </h2>
-      <br>
+      <br><br><br>
       <h1>FIRST CLASS IS FREE</h1>
  
     </div>
 
   </div>
   <br>
-      
-    <br>
       <br>
-  <!-- Buttons -->
-    <div class="button-group">
-
-      
-      <a href="shop.html" class="btn">
-        Shop
-      </a>
-      <a href="about.html" class="btn">
-        About
-      </a>
-
-    </div>
-    <!-- Social links -->
-     <br><br>
+      <br>
+      <!-- Social links -->
     <div class="socials">
       
       <p>
@@ -244,6 +238,20 @@
           FWSF Official YouTube
         </a>
       </p>
+
+    </div>
+    <br>
+      <br>
+  <!-- Buttons -->
+    <div class="button-group">
+
+      
+      <a href="shop.html" class="btn">
+        Shop
+      </a>
+      <a href="about.html" class="btn">
+        About
+      </a>
 
     </div>
 
