@@ -16,141 +16,7 @@
 
 <meta name="robots" content="index, follow" />
 
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: Arial, sans-serif;
-      color: white;
-      overflow-x: hidden;
-      overflow-y: auto;
-    }
-
-    /* Background */
-    .bg {
-      position: fixed;
-      inset: 0;
-      background-image: url("fwsf-background.jpg");
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      z-index: -2;
-    }
-
-    /* Dark overlay for readability */
-    .overlay {
-      position: fixed;
-      inset: 0;
-      background: rgba(0, 0, 0, 0.45);
-      z-index: -1;
-    }
-
-    /* Main content */
-    .content {
-      min-height: 100vh;
-
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-
-      text-align: center;
-      padding: 20px;
-    }
-
-    h1 {
-      font-size: 60px;
-      margin-bottom: 15px;
-      text-shadow: 2px 2px 10px black;
-    }
-
-    .subtitle {
-      font-size: 20px;
-      margin-bottom: 40px;
-      color: #e0e0e0;
-    }
-
-    /* Social links */
-    .socials {
-      margin-bottom: 40px;
-    }
-
-    .socials p {
-      margin: 10px 0;
-      font-size: 18px;
-    }
-
-    .socials a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-      transition: 0.3s ease;
-    }
-
-    .socials a:hover {
-      color: #cfcfcf;
-    }
-
-    /* Buttons container */
-    .button-group {
-      display: flex;
-      gap: 20px;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-
-    /* Shared button styles */
-    .btn {
-      padding: 14px 34px;
-
-      background: rgba(0, 0, 0, 0.75);
-      color: white;
-
-      border: 2px solid white;
-      border-radius: 12px;
-
-      text-decoration: none;
-      font-size: 18px;
-      font-weight: bold;
-
-      transition: all 0.3s ease;
-
-      backdrop-filter: blur(4px);
-    }
-
-    .btn:hover {
-      background: white;
-      color: black;
-      transform: translateY(-3px);
-    }
-
-    /* Mobile responsiveness */
-    @media (max-width: 768px) {
-  .content {
-    justify-content: flex-start;
-    padding-top: 30px;
-    padding-bottom: 40px;
-  }
-
-  .schedule-layout {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .side-button {
-    width: 100%;
-  }
-
-  .btn {
-    width: 200px;
-    text-align: center;
-  }
-}
-  </style>
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
@@ -161,14 +27,23 @@
   <!-- Dark overlay -->
   <div class="overlay"></div>
 
+  <!--navigation toolbar-->
+<div class="topnav">
+  <ul>
+  <li><a class="active" href="index.html">Home</a></li>
+  <li><a href="shop.html">Shop</a></li>
+  <li><a href="about.html">About</a></li>
+  <li><a href="contact.html">Contact</a></li>
+</ul>
+</div>
   <!-- Main content -->
   <div class="content">
-
+    <a href="index.html"><img src="logo.png" class="logo"></a> 
     <h1>Fort Wayne Submission Fighting</h1>
 
     <h2>
       Located at :
-      <a href="https://maps.app.goo.gl/USszVfTMGjP1bPfr6" target="_blank">
+      <a class="location" href="https://maps.app.goo.gl/USszVfTMGjP1bPfr6" target="_blank">
           <strong>1724 Prairie Ln</strong>
         </a>
        behind chase bank
@@ -191,7 +66,7 @@
       <h2>
       <div class="schedule-row">
         <div class="day">Monday</div>
-        <div class="class">5:30 PM — NO GI</div>
+        <div class="class">5:30 PM — GI Class </div>
       </div>
 
       <div class="schedule-row">
@@ -201,17 +76,17 @@
 
       <div class="schedule-row">
         <div class="day">Wednesday</div>
-        <div class="class">5:30 PM — NO GI</div>
+        <div class="class">5:30 PM — NO GI Class </div>
       </div>
 
       <div class="schedule-row">
         <div class="day">Thursday</div>
-        <div class="class">5:30 PM — GI Day</div>
+        <div class="class">5:30 PM — GI Class</div>
       </div>
 
       <div class="schedule-row">
         <div class="day">Friday</div>
-        <div class="class">5:30 PM — NO GI</div>
+        <div class="class">5:30 PM — NO GI Class</div>
       </div>
 
       <div class="schedule-row">
@@ -224,11 +99,8 @@
         <div class="class">10:30 AM — Open Mat</div>
       </div>
       </h2>
-      <br><br><br>
-      <h1>FIRST CLASS IS FREE</h1>
- 
     </div>
-
+<h1>FIRST CLASS IS FREE</h1>
   </div>
   <br>
       <br>
@@ -237,15 +109,17 @@
     <div class="socials">
       
       <p>
-        🔗 Instagram:
         <a href="https://www.instagram.com/fwsubmissionfighting/" target="_blank">
+           <img  src="https://cdn-icons-png.flaticon.com/256/4103/4103007.png" class="insta-ico">
+           <br></br>
           FWSF Official Instagram
         </a>
       </p>
 
       <p>
-        🔗 YouTube:
         <a href="https://www.youtube.com/@Fwsubmissionfighting" target="_blank">
+          <img src="https://cdn-icons-png.flaticon.com/256/1384/1384060.png" class="insta-ico">
+          <br></br>
           FWSF Official YouTube
         </a>
       </p>
@@ -253,18 +127,5 @@
     </div>
     <br>
       <br>
-  <!-- Buttons -->
-    <div class="button-group">
-
-      
-      <a href="shop.html" class="btn">
-        Shop
-      </a>
-      <a href="about.html" class="btn">
-        About
-      </a>
-
-    </div>
-
 </body>
 </html>
