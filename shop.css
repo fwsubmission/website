@@ -123,6 +123,11 @@ ul li a {
    align-items:center;
     
   }
+  .logo:hover
+  {
+ transform: translateY(-4px) scale(1.02);
+  filter: drop-shadow(0 10px 15px rgba(0,0,0,0.2));
+  }
     /* Buy button */
     .buy-btn {
       display: inline-block;

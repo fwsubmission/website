@@ -68,6 +68,11 @@ ul li a {
    height:200px;
     
   }
+  .logo:hover
+  {
+ transform: translateY(-4px) scale(1.02);
+  filter: drop-shadow(0 10px 15px rgba(0,0,0,0.2));
+  }
     .insta-ico
   {
     object-position:left ;
