@@ -17,13 +17,20 @@
   background-color: #801212;
   display: flex;
   justify-content: center;
+  color:white;
 }
 
 
 ul li {
   float: left;
+  
 }
-
+  
+.location:link, .location:visited
+{
+    color:red;
+}
+  
 ul li a {
   display: block;
   color: white;
@@ -68,6 +75,7 @@ ul li a {
    height:200px;
     
   }
+
   .logo:hover
   {
  transform: translateY(-4px) scale(1.02);
@@ -79,7 +87,25 @@ ul li a {
     width:100px;
     height:100px;
   }
-  
+  .schedule-box{
+      background: rgba(0, 0, 0, 0.72);
+      border: 2px solid white;
+      border-radius: 20px;
+
+      padding: 35px;
+
+      backdrop-filter: blur(5px);
+      box-shadow: 0 0 25px rgba(0,0,0,0.4);
+
+      display: inline-block;
+      max-width: 700px;
+      width: 100%;
+    }
+  .schedule-box:hover
+  {
+transform: translateY(-4px) scale(1.02);
+  filter: drop-shadow(0 10px 15px rgba(0,0,0,0.2));
+  }
     h1 {
       font-size: 60px;
       margin-bottom: 15px;
@@ -167,11 +193,6 @@ ul li a {
     width: 200px;
     text-align: center;
   }
-  
-location:unvisited
-{
-    color:red;
-}
-  
+
   
 }
