@@ -3,13 +3,23 @@
       padding: 0;
       box-sizing: border-box;
     }
-
+    
+.logo
+  {
+   width:300px;
+   height:200px;
+   align-items:center;
+    margin:0;
+    justify-content: center;
+  }
     body {
       font-family: Arial, sans-serif;
       color: white;
       overflow-x: hidden;
       overflow-y: auto;
+    
     }
+
     ul {
   list-style-type: none;
   margin: 0;
@@ -35,18 +45,13 @@ ul li a {
   padding: 14px 16px;
   text-decoration: none;
 }
-    body {
-      font-family: Arial, sans-serif;
-      color: white;
-      min-height: 100vh;
-      overflow-x: hidden;
-    }
+    
 
     /* Background */
     .bg {
       position: fixed;
       inset: 0;
-      background-image: url("fwsf-background2.jpg");
+      background-image: url("fwsubmissionbg2.jpg");
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
@@ -74,90 +79,52 @@ ul li a {
       margin-bottom: 20px;
       text-shadow: 2px 2px 10px black;
     }
-.logo
-  {
-   width:300px;
-   height:200px;
-   align-items:center;
-    
-  }
-    .subtitle {
-      font-size: 22px;
-      margin-bottom: 50px;
-      color: #d9d9d9;
-    }
+.dominic {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+ 
+}
+.text
+{
+  align-items: center;
+  text-align: center;
+}
+.pictures-container
+{
 
-    /* Schedule box */
-    .schedule-box {
-      background: rgba(0, 0, 0, 0.72);
-      border: 2px solid white;
-      border-radius: 18px;
-      padding: 35px;
-      backdrop-filter: blur(5px);
-      box-shadow: 0 0 25px rgba(0,0,0,0.4);
-    }
-
-    .schedule-title {
-      font-size: 36px;
-      margin-bottom: 30px;
-      letter-spacing: 2px;
-    }
-
-    /* Schedule rows */
-    .schedule-row {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-
-      padding: 16px 20px;
-      margin-bottom: 12px;
-
-      background: rgba(255,255,255,0.08);
-      border-radius: 12px;
-
-      transition: 0.3s ease;
-    }
-
-    .schedule-row:hover {
-      transform: scale(1.02);
-      background: rgba(255,255,255,0.14);
-    }
-
-    .day {
-      font-size: 20px;
-      font-weight: bold;
-    }
-
-    .class {
-      font-size: 18px;
-      color: #e2e2e2;
-    }
-
-    /* Back button */
-    .back-btn {
-      display: inline-block;
-      margin-top: 35px;
-
-      padding: 14px 34px;
-
-      background: rgba(0, 0, 0, 0.75);
-      color: white;
-
-      border: 2px solid white;
-      border-radius: 12px;
-
-      text-decoration: none;
-      font-size: 18px;
-      font-weight: bold;
-
-      transition: all 0.3s ease;
-    }
-
-    .back-btn:hover {
-      background: white;
-      color: black;
-      transform: translateY(-3px);
-    }
+  text-align: center;
+   display: flex;
+    justify-content: center; /* centers the row */
+    gap: 20px; /* space between pictures */
+}
+.dc 
+{
+ width:500px;
+  height: 500px;
+}
+.dc:hover
+{
+ transform: translateY(-4px) scale(1.02);
+  filter: drop-shadow(0 10px 15px rgba(0,0,0,0.2));
+}
+.pictures-container a,
+.pictures-container a:visited {
+  color: white;
+  text-decoration: none;
+}
+.elijah
+{
+    display: flex;
+  justify-content: center;
+  align-items: flex-start;
+ 
+}
+.nd{
+   display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
 
     /* Mobile */
     @media (max-width: 768px) {
