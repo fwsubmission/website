@@ -1,0 +1,150 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+.logo
+  {
+   width:300px;
+   height:200px;
+   align-items:center;
+    margin:0;
+    justify-content: center;
+  }
+    body {
+      font-family: Arial, sans-serif;
+      color: white;
+      overflow-x: hidden;
+      overflow-y: auto;
+    
+    }
+
+    ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #801212;
+  display: flex;
+  justify-content: center;
+}
+
+.logo:hover
+  {
+ transform: translateY(-4px) scale(1.02);
+  filter: drop-shadow(0 10px 15px rgba(0,0,0,0.2));
+  }
+ul li {
+  float: left;
+}
+
+ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+    
+
+    /* Background */
+    .bg {
+      position: fixed;
+      inset: 0;
+      background-image: url("fwsf-background2.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      z-index: -2;
+    }
+
+    /* Dark overlay */
+    .overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.55);
+      z-index: -1;
+    }
+
+    /* Main content */
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 54px;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 10px black;
+    }
+.dominic {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+ 
+}
+.text
+{
+  align-items: center;
+  text-align: center;
+}
+.pictures-container
+{
+
+  text-align: center;
+   display: flex;
+    justify-content: center; /* centers the row */
+    gap: 20px; /* space between pictures */
+}
+.dc 
+{
+ width:500px;
+  height: 500px;
+}
+.dc:hover
+{
+ transform: translateY(-4px) scale(1.02);
+  filter: drop-shadow(0 10px 15px rgba(0,0,0,0.2));
+}
+.pictures-container a,
+.pictures-container a:visited {
+  color: white;
+  text-decoration: none;
+}
+.elijah
+{
+    display: flex;
+  justify-content: center;
+  align-items: flex-start;
+ 
+}
+.nd{
+   display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+    /* Mobile */
+    @media (max-width: 768px) {
+
+      h1 {
+        font-size: 38px;
+      }
+
+      .subtitle {
+        font-size: 18px;
+      }
+
+      .schedule-row {
+        flex-direction: column;
+        gap: 8px;
+        text-align: center;
+      }
+
+      .day,
+      .class {
+        font-size: 18px;
+      }
+    }
